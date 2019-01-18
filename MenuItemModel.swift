@@ -1,6 +1,5 @@
 //
 //  MenuItemModel.swift
-//  SampleAppCustomui
 //
 //  Created by N.A Shashank on 23/10/18.
 //
