@@ -1,6 +1,5 @@
 //
 //  Codable+Additions.swift
-//  SampleAppCustomui
 //
 //  Created by N.A Shashank on 18/01/19.
 //
