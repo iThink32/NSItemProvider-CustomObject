@@ -21,8 +21,10 @@ is an extension that can be used to convert a dict to a Codable type or decode a
 For example If menuItemModel is an instance of MenuItemModel then
 
 ```
-menuItemModel.dictionary() would give you a dictionary of type -> [AnyHashable:Any]? 
+menuItemModel.dictionary() 
 ```
+
+would give you a dictionary of type -> [AnyHashable:Any]? 
 
 The other way is if you have a dictionary and a codable type , you can initialize it like so :
 
