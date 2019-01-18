@@ -3,11 +3,21 @@
 //  SampleAppCustomui
 //
 //  Created by N.A Shashank on 23/10/18.
-//  Copyright © 2018 Razorpay. All rights reserved.
 //
 
 import UIKit
 import MobileCoreServices
+
+enum PaymentType:String,Codable {
+    case fetchSubscription
+    case fetchPaymentMethods
+    case makePayment
+    case externalPaymentEntity
+    
+    func isNativePayment() -> Bool {
+        return "\(self)".lowercased().contains("fetch") || "\(self)".lowercased().contains("make")
+    }
+}
 
 final class MenuItemModel:NSObject,NSItemProviderWriting,NSItemProviderReading,Codable {
     let title:String
